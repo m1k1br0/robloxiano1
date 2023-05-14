@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Metrophobic", sans-serif;
+}
+
+.col {
+  /*border: 1px solid black;*/
+  width: 1000px;
+  margin: 0px auto;
+  font-size: 25px;
+  color: khaki;
+}
+
+.page .col {
+  height: 100vh;
+}
+
+#logo-dm {
+  display: flex;
+}
+
+#logo {
+  flex-grow: 1;
+}
+
+#dm {
+  flex-grow: 1;
+  text-align: right;
+}
+
+#dm a img {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#main {
+  display: flex;
+}
+
+#main a {
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: orangered;
+  transition: 500ms;
+}
+
+#main a:hover,
+#main a.act-el {
+  color: white;
+  background: orangered;
+}
+
+.header {
+  border-bottom: 2px solid orangered;
+  /*position: fixed;
+  width: 100%; */
+}
+#o-nama {
+  background: url("boat.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*
+#usluge {
+  background: url("autumn.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+*/
+#proizvodi {
+  background: url("bike.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer {
+  background-color: orangered;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.map {
+  margin: 20px;
+  width: 80%;
+  height: 50vh;
+  filter: invert(100%);
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn button {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  font-size: 15px;
+  outline: 0;
+  margin: 20px;
+}
+
+.b1 {
+  border: 1px solid blue;
+  transition: 0.2s ease-in-out;
+}
+
+.btn .b1:hover {
+  box-shadow: inset 0 0 0 35px blue;
+}
+
+.btn .b2 {
+  border: 1px solid blue;
+  transition: 0.2s ease-in-out;
+}
+
+.btn .b2:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: green;
+  left: 0;
+  bottom: 0;
+  transition: all 1s;
+  opacity: 0.3;
+}
+
+.btn .b2:hover:before {
+  width: 100%;
+}
+
+.btn .b3 {
+  border: 1px solid blue;
+  transition: 0.2s ease-in-out;
+}
+.btn .b3:hover {
+  box-shadow: 0 5px 5px -5px purple;
+  transform: translateY(-5px);
+}
+.btn .b3:hover:before {
+  width: 100%;
+}
+
+#anim1 {
+  width: 30vw;
+  height: 250px;
+  background-color: darkkhaki;
+  margin: auto;
+  transition: opacity 0.5s;
+}
+
+#anim2 {
+  width: 30vw;
+  height: 250px;
+  background-color: rgb(173, 164, 36);
+  margin: auto;
+  transition: opacity 1.5s;
+  opacity: 0;
+}
+
+#anim3 {
+
+  background-color: rgb(173, 164, 36);
+  margin: auto;
+}
+
+#anim1:hover {
+  opacity: 0.3;
+}
+
+#anim2:hover {
+  opacity: 1;
+}
+.text {
+  text-align: center;
+  color: black;
+  padding-top: 100px;
+}
+
+#anim3 {
+  width: 100%;
+  height: 200px;
+  margin: 100px 0;
+}
+#anim3 .levo {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(173, 164, 36);
+  float: left;
+  transition: width 2s;
+}
+#anim3 .desno {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(61, 8, 48);
+  float: right;
+  transition: width 2s;
+}
+
+#anim3:hover .levo,
+#anim3:hover .desno {
+  width: 25%;
+}
+
+#anim3 .levo:hover,
+#anim3 .desno:hover {
+  width: 75%;
+}
+
+p{
+  color: black;
+}
